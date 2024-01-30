@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "expo-notification-app",
-    "slug": "expo-notification-app",
+    "slug": "rn-push-notification",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "90f475e2-93bd-4cbb-aed8-cd7dbe78bd38"
+      }
+    },
+    "owner": "emirob"
   }
 }
