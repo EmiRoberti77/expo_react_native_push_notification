@@ -12,6 +12,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/status", (req: Request, res: Response) => {
+  res.json({
+    status: true,
+    er_push_server: "healthy",
+    time: new Date().toISOString(),
+  });
+});
+
 app.post("/push", async (req: Request, res: Response) => {
   const { title, body } = req.body;
   const response = await axios.post(pushEndPoint, {
