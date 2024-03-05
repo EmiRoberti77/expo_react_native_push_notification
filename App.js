@@ -82,9 +82,13 @@ export default function App() {
   };
 
   return (
-    <View style={{ marginTop: 100 }}>
-      <Text>Expo react natice notification</Text>
+    <View style={{ marginTop: 100, alignItems: "center", alignSelf: "center" }}>
+      <Text style={{ alignSelf: "center" }}>
+        Expo react natice notification
+      </Text>
       <Button title="send push notification" onPress={sendNotification} />
     </View>
   );
 }
+
+//ExponentPushToken[hLyPY4IH5WTO-FO5tlvsBD
